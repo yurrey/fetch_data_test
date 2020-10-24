@@ -1,0 +1,182 @@
+:root{
+    --font : 'Oswald', sans-serif;
+}
+
+
+body{
+    font-family: var(--font);
+    background: aliceblue;
+}
+
+section{
+}
+.ml1{
+    margin-left: 10px;
+}
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#loader{
+}
+.flex{
+    display: flex;
+    justify-content: start;
+}
+
+.flex1{
+    flex: 1;
+}
+.flex2{
+    flex: 2;
+}
+
+.flex-b{
+    display: flex;
+    justify-content: space-between;
+}
+.p-2{
+    padding: 1.5rem;
+}
+header{
+    margin-bottom: 2.5rem;
+}
+
+.m-1{
+    margin: 0 5rem;
+}
+
+.text-center{
+    text-align: center;
+}
+.h100vh{
+    height: 100vh;
+}
+
+.h80vh{
+    height: 100vh;
+}
+.borderlt{
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-radius: 5px;
+}
+.p5{
+    padding: 5px;
+}
+
+.d-none{display: none;}
+.bordert{
+    border-top: 1px solid black;
+}
+
+.h60vh{
+    height: 100vh;
+}
+.h100{
+    height: 100%;
+}
+.mt40{
+    margin-top: 40px;
+}
+
+.flex-start{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.floating{
+    box-shadow: -4px 3px 7px 0px rgb(209, 203, 203);
+    padding: 15px;
+    min-width: 15rem;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    box-shadow: -4px 3px 7px 0px rgb(209, 203, 203);
+    padding: 15px;
+    min-width: 15rem;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+
+.flex-a{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+select{
+    width: 100%;
+    padding: 16px 8px;
+    margin: 30px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: .4rem;
+    box-sizing: border-box;
+    }
+.flex{
+    display: flex;
+}  
+
+#notification{
+    display: none;
+    transition: display 1.5s ease;
+}
+#cities{
+    background: #8ebf42;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0px 4px 7px #ecdfdf;
+    transition: all 0.3s ease;
+    position: relative;
+    bottom: -3px;
+}
+button {
+    background-color: #5c5e586f;
+    color: white;
+    padding: 14px 0;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: -6px 12px 7px #ecdfdf;
+
+    }
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .card {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #notification{
+        position: absolute;
+        bottom: 0;
+    }
+    }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>request data api practice</title>
+</head>
+<body>
+    
+    <content>
+        <header class="flex-b p-2">
+            <div class="logo">
+                api Exercice
+            </div>
+            <div class="flex-start">
+                ☰
+            </div>
+        </header>
+
+        <main class="m-1" id="main">
+            <form id="cityForm">
+                <label for="City" class='text-center'>City Name</label>
+                <br>
+                <select type="text" id="city">
+                    <option id="options">--choose a city--</option>
+                </select>
+                <br>
+                <button type="submit" id='subbtn' class='br10 check' disabled>
+
+                    <span id="loader" class='d-none'><i class="fa fa-spinner fa-spin"></i></span> Check
+                </button>
+            </form>
+            <div class="floating" id="notification"></div>
+            <button id="cities">GET All the data</button>
+            <section id="cityweather" class="flex-start">
+
+            </section>
+            <section class='flex mt40  flex-wrap' id='report'>
+                
+
+
+                
+                
+            </section>
+            <section>
+                
+            </section>
+        </main>
+    </content>
+    
+    <script src="app.js"></script>
+</body>
+</html>
