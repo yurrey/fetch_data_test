@@ -14,7 +14,7 @@ const main = document.querySelector('#main');
 const cities = document.querySelector('#cities');
 const options = document.querySelector('#options');
 const notification = document.querySelector('#notification');
-
+const data-loader = document.querySelector('#data-loader');
 
 
 cityInp.addEventListener('input', (e)=>{
@@ -34,6 +34,7 @@ let res;
 let req = new XMLHttpRequest();
 
 cities.addEventListener('click', ()=>{
+    data-loader.classList.remove('d-none');
     req.open('GET', 'https://raw.githubusercontent.com/alaouy/sql-moroccan-cities/master/json/ville.json');
     req.send();
     req.onreadystatechange = () => {
@@ -47,6 +48,7 @@ cities.addEventListener('click', ()=>{
                 city.innerHTML += `<option>${citi}</option>`
             }) 
             //alert('data')
+            data-loader.classList.add('d-none');
             notification.style.display='block';
 
             notification.innerHTML = '<p>Data loaded, choose a city</p><button>close</button>'
